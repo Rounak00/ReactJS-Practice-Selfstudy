@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import {FiShoppingCart} from "react-icons/fi"
-import { useState } from "react";
 
 const linkStyle = {
 	textDecoration: "none",
@@ -11,7 +10,6 @@ const linkStyle = {
 
 const Nav = () => {
 
-    const [color, setColor] = useState("white");
 
 	return (
 		<nav
@@ -31,13 +29,11 @@ const Nav = () => {
 					</Link>
 					<Link to="/cart" style={linkStyle}>
                         <FiShoppingCart style={{
-                            color: `${color}`,
+                            color: "#fff",
                             marginRight: "0.5rem"
                         }} />
 						Cart
 					</Link>
-
-                    <button onClick={() => setColor("red")}>Click</button>
 				</li>
 			</ul>
 		</nav>

@@ -1,6 +1,16 @@
 import React from "react";
+import { useState } from "react";
 
 const CartPage = () => {
+	const [num, setNum] = useState(0)
+
+	const handleMinus = () => {
+		setNum(previus => previus-1)
+	}
+	const handlePlus = () => {
+		setNum(previus => previus+1)
+	}
+	
 	return (
 		<div
 			style={{
@@ -9,6 +19,10 @@ const CartPage = () => {
 			}}
 		>
 			<h1>CartPage</h1>
+			{/* disabled={num<=0} */}
+			<button  onClick={handleMinus}>Minus</button>
+			{num}
+			<button onClick={handlePlus}>Plus</button>
 		</div>
 	);
 };
