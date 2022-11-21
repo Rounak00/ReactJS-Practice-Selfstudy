@@ -1,3 +1,5 @@
+//its not rerender the component where useState rerender it
+
 import './App.css';
 import React,{useRef} from 'react'
 function App() {
