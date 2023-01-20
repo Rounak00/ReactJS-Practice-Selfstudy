@@ -10,6 +10,7 @@ const [count2,setCount2]=useState(0);
     2. DidUpdate -> Update
     3. WillUnmount -> Death
   */}  
+  useEffect(()=>{}) //Simple type problem is if we use usestate in that case it will again run for rendering
   
   useEffect(()=>{
    console.log("work as did mount")
@@ -24,5 +25,6 @@ const [count2,setCount2]=useState(0);
    return ()=>{
     console.log("IT is a willunmount")
    }
-  },[]) //  if we put count in array so every time it will update it will unmount first
+  },[]) //  if we put count in array so every time it will unmount first, then it will update 
+        // if dont give any value a simple empty array then it will not update
 }
