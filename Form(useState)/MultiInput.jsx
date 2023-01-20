@@ -34,7 +34,7 @@ const MultiInputs=()=>{
                     <input type="text" 
                     value={state.userName}
                     onChange={handleInput}
-                    name="userName" id="userName"/>
+                    name="userName"/>
                </div>
                <div>
                     <label htmlFor="phnNumber"> Phone Number</label>
@@ -42,7 +42,7 @@ const MultiInputs=()=>{
                     value={state.phnNumber}
                     onChange={handleInput}
                     autoComplete="off"
-                    name="phnNumber" id="phnNumber"/>
+                    name="phnNumber"/>
                </div>
                <div>
                  <button type="submit">Submit</button>
