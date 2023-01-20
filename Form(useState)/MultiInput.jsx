@@ -13,7 +13,8 @@ const MultiInputs=()=>{
         const name=e.target.name;
         const value=e.target.value;
 
-        setState({...state, [name] :value})
+        setState({...state, [name] :value}) // akhane [name] it means dynamic data that mean in each change remove or writting of words it also remove and writing
+         
      }
 
      const handleSubmit=(e)=>{
@@ -40,6 +41,7 @@ const MultiInputs=()=>{
                     <input type="number"
                     value={state.phnNumber}
                     onChange={handleInput}
+                    autoComplete="off"
                     name="phnNumber" id="phnNumber"/>
                </div>
                <div>
