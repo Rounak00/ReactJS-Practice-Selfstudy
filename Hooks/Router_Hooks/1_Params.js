@@ -8,7 +8,7 @@ export function test({match}){
 }
 */
 
- eport function test(){
+ export function test(){
    const par=useParams(); //path should be /:name; // it return a object
    return (
     <p>Hello {par.name}</p>
@@ -16,7 +16,7 @@ export function test({match}){
  }
  
  
-  eport function test(){
+  export function test(){
    const par=useParams(); //path should be /:fname/:lname; // it return a object
    return (
     <p>Hello {par.fname} {par.lname}</p>
