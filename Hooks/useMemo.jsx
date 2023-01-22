@@ -1,4 +1,5 @@
-// use memo is kinda useeffect but we can store return
+// here the problem is when we press second button it make abother state and there it runs time taking function for display number so we can set only when we need to run a particular function
+
 
 import React, { useState, useMemo } from "react";
 import styled from "styled-components";
@@ -17,7 +18,10 @@ const MemoHook = () => {
     return num;
   };
 
-  const CheckData = useMemo(() => {
+  /*
+  const CheckData=countNumber(mynum); // without usememo our second switch will not work properly
+  */
+  const CheckData = useMemo(() => {   //we used use memo not effect bcz useEffect didnot return anything
     return countNumber(myNum);
   }, [myNum]);
 
