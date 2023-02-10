@@ -1,4 +1,4 @@
-
+// Custom Hook: Same functionality in same pages
 import {useEffect, useState} from 'react';
 
 const useTitleCount=(count)=>{
