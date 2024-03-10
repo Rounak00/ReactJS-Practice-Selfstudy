@@ -35,3 +35,5 @@ const getAPIData=async()=>{
     const res=await axios.get("LINK");
     console.log(res);
 }
+
+axios.post("link",data).yhen((res)=>{console.log(res);})
