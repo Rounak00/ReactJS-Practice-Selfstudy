@@ -1,13 +1,18 @@
 import React from 'react'
-
-const Card = (props) => {
+import PropTypes from 'prop-types'
+const Card = ({name,salary,state}) => {
   return (
     <div>
-        <p>Name : {props.name}</p>
-        <p>Salary: {props.salary}</p>
-        <p>State: {props.state}</p>
+        <p>Name : {name}</p>
+        <p>Salary: {salary}</p>
+        <p>State: {state}</p>
     </div>
   )
 }
 
+Card.PropTypes={
+  name:PropTypes.string,
+  salary:PropTypes.number,
+  state:PropTypes.string
+}
 export default Card
